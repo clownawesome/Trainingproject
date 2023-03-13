@@ -1,0 +1,577 @@
+#install python
+#using python in replit
+#using pip to instal pacakges in python
+#installing packages like pandas(data analysis library) using pip in python
+#using import command to use pandas/packages
+#using pyhton command to access repel and exit() command to go out of terminal of python
+#access pyhton shell using replit web software
+#--built-in module has a large number of predefined functions to perform specific tasks
+#-- external modules are modules are modules imported from 3rd party files or can be installed using some package manager like pip.
+#escape sequence character #, \n, 
+### shortcuts --- ctrl + / (comment multiple lines at once), alt+arrow (move line), alt+shift+down (replicate/copylines), alt+cursor click (edit multiple lines eg:add space in 3-4 lines)
+# using ''' text ''' or """ text """ to comment any amount of line in it.
+#variables -- variable is just like a container inside memory that holds data and assign value
+#data type -- it specifies the type of value a variable is holding and required to run operation without errors, types of it are 1) numericdata 2) textdata:string 3)booleandata:true/false 4) sequence data:list,tuple 5)mapped data: dict--to store key value pair
+#list-- list is a collection of data that can be of different types & that can be changed/mutable.
+#tuple-- it is a collection of data that can be of different types & that cannot be changed/mutable.
+#dict-- collection of key value pair.
+#type casting-- the conversion of one data type to another is called typecasting/typeconversion, supported functions int(), float(),str(), ord(), hex(), oct(), tuple(), set(), list(), dict(), etc.
+#type casting types-- 1)explicit- the one we/developer do eg:-int(), float(),str(), oct(), hex() 2)implicit- one data type is converted to another by python.
+#taking user input on python -- in python we can take user input directly by using input() function, this input function gives a return value as string/character hence we have to pass that into a variable.
+#String -- "" -- any thing that you enclose between single/double quotation is considered as string.
+#Looping through the string -- used to print individual alphabets of any sentence one below another.
+#string slicing -- printing only alphabets/characters you want.
+#string length finding -- print(lens(fruit))
+#Negative string slicing 1 ---- [0:-3]
+#string operations  --- change all to uppar or lower case
+#string striping/removing --- remove unwanted characters
+#strings are immutable/cannot be changed
+#string replace ----- print(a.replace("old name", "new name")
+#string split ---- used to split the words
+#string capitalize -- make the 1st alphabet caps and rest in lower case
+#string center -- add spaces in front
+#string count -- counts the no. of same words/alphabets in the line
+#string endswith --- tell weather the sentence is ending with a given value
+#string endswith/specific word --- tell weather the sentence has the given value in those position
+#string find --- searches for 1st occurance of given value and return -1 if not present
+#string index() --- same as find, searches for 1st occurance of given value but returns VALUEERROR:Substring not found if value not present.
+#string isalnum() --- tells that the given sentence has only a-z or 0-9 characters and if not then gives output as false
+#string isalpha() --- tells that the given sentence has only a-z, and if number or others present then gives output as false
+#string islower() --- tells that the given sentence has only lower case a-z, and if not then gives output as false
+#string isupper() --- tells that the given sentence has only upper case A-Z, and if not then gives output as false
+#string isprintable() --- shows output as true if all the values are printable or else false
+#string isspace() --- shows output as true if only white space used(space button/tab buttons only no words/no.) or else false
+#string istitle() --- shows output as true if only each letter of word is capital or else false
+#string startswith() --- shows output as true if word starts with "enteranytexthere" or else false
+#string swapcase() --- converts upper to lower and lower to upper case
+#string title() --- converts 1st alphabet of each word to capital alphabet
+#if-else statement --- evaluate weather somthing is true/false and act according to it.
+#conditional operator
+# > greaterthan, < les than, >= greaterthan=, <= lessthan=, == equal to, != notequal to
+#if --- if the statement is true/false do this
+#elif --- else if do this.
+#else --- else do this.
+#nested --- helps is giving as many as if statements you want inside another if statement
+#matchcase --- it is just like if else, to implement switch-case like characterstics very similar to if-else functionlity, we use match case in python
+#loops --- to execute a group of statements a certain no. of times
+#types of loops --- 1) for loop 2) while loop 3) nested loop--it means forloop k andar while loop and vice versa.
+#range ---(start, stop, step) print anything any no. of time eg:-20,000 times
+#while loop --- it will excute the statement when the condition is true and if false interpreter will come out.
+
+
+
+
+
+
+
+
+
+
+print("hello world")
+print(5)
+print("holi bohot achi hai")
+print ("hi, its 7")
+print (5+10)
+print (25*25)
+print (10/2)
+# \n escape sequence character
+print ("hey i am a good boy\nand he is too")
+#write text in inverted commas \"he\" ---- output "he"
+print ("hey i am a good boy\nand \"he\" is too")
+#sep"~" or sep="." command to seperater
+print ("hey i am a good boy and is too", 7, 8, sep="~")
+#end="900\n" to end line with words in that end bracket
+print ("hey i am a good boy and is too", 7, 8, sep=".", end="900\n")
+print ("now you are good")
+#variables
+a = 1
+print (a)
+b = 2
+print (a+b)
+c = 'ujwesh'
+print (c)
+d = True
+print (d)
+#know data type
+print ("type of a is", type(a))
+print ("type of a is", type(c))
+print ("type of a is", type(d))
+#operators
+print(5+6)
+print(15-6)
+print(15*6)
+print(15/6)
+#divide without integer in output
+print(15//6)
+#divide and know remender/Module operator
+print(16%3)
+#how to give power to number/exponential operator 
+print(5**3)
+
+#calculator
+a = 50
+b = 3
+print("the value of", a, "+", 3, "is:", a + b)
+print("the value of", a, "-", 3, "is:", a - b)
+print("the value of", a, "*", 3, "is:", a * b)
+print("the value of", a, "/", 3, "is:", a / b)
+
+#type casting
+a = "1"
+b = "3"
+print(int(a) + int(b))
+
+#explicit typecasting
+string = "15"
+number = 7
+string_number = int(string)
+sum= number + string_number
+print("the sum of both the no. is:", sum)
+
+
+#implicit typecasting
+a = 1.9
+b = 8
+print(a + b) #data is converted to float data type (.1, .2, .3)
+
+#user input 1
+a = input()
+print("my name is", a)  #write your name in output(ujwesh), it will print "my name is ujwesh"
+
+#user input 2
+a = input("enter your name: ")
+print("my name is", a)  #will ask as input enter your name:
+
+#user input 3
+x = input("enter first number: ")     #10
+y = input("enter second number: ")    #20
+print(x + y)   #output = 1020 (it will just joint both no. not add)
+
+#user input 4    ----- (to add no. use int(x) + int(y)
+x = input("enter first number: ")     #10
+y = input("enter second number: ")    #20
+print(int(x) + int(y))   #output = 30 (now it will add both the no.)
+
+#string 1
+name = "ujwesh"
+apple = "he said, \"i want to eat apple\""     #\ used to give double quote to the sentence
+print("hello, " + name)                        #output = hello, ujwesh   he said, "i want to eat apple"
+print(apple)
+
+#string 2
+apple = 'he said, "i want to eat apple"'
+print(apple)                                   #output = hello, ujwesh   he said, "i want to eat apple"
+
+#string 3 --(multi string)  '''x''' or """x""" --used to write multiple lines in without using string multiple times
+name = "ujwesh"
+apple = '''he said, "i want to eat apple"
+as
+soon
+as
+possible'''
+print("hello, " + name)
+print(apple)
+
+#string 4 --(access character of string)
+name = "ujwesh"
+print(name[0])  #will print 1st alphabet of the string e.i: U
+print(name[1])  #will print 1st alphabet of the string e.i: j
+print(name[2])  #will print 1st alphabet of the string e.i: w
+print(name[3])  #will print 1st alphabet of the string e.i: e
+print(name[4]) 
+print(name[5]) 
+
+
+#string 5 --(#Looping through the string) -- this will print each alphabet in the string individually.
+apple = '''he said, "i want to eat apple"
+as
+soon
+as
+possible'''
+print(apple)
+print("lets use a for loop\n")
+#Looping through the string
+for character in apple:
+  print(character)
+
+#string slicing 1
+names = "ujwesh,vijay"
+print(names[0:6])           #output = will print alphabets from 0 to 6 e.i:ujwesh. the total no. of character also involves (,) commas
+                            #will include 0 but not 6.
+
+
+#string slicing 2 + len ----- finding the length print(len)
+mango = "ujwesh,vijay"
+print(len(mango))           #output = 13 (it will show how many alphabets are there in mango including commas(,) )
+
+#string slicing 3 + len
+fruit = "mango"
+len1 = len(fruit)
+print("mango is a", len1, 
+      "letter word")        #output = mango is a 5 letter word
+
+#string slicing 4 ---- print output from specific position
+names = "ujwesh,vijay"
+print(names[1:6])           #output = jwesh
+
+#string slicing 5 ---- print length using len
+fruit = "mango"
+len1 = len(fruit)
+print(len1)                 #output = 5
+
+#string slicing 6 ---- using slicing with front no. empty
+fruit = "mango"
+print(fruit[:5])            #output = mango   (as it will assume the 1st no. b4 : to be 0 bydefault)
+
+#Negative string slicing 1 ---- [0:-3]
+names = "ujwesh"
+print(names[:-3])           #output = ujw     (as total no. of alphabets are 6 it will -3 total 6-3=3 will show 1st 3 alphabets)
+
+#Negative string slicing 2 --- [-1:-3]
+names = "ujwesh"
+print(names[-3:-1])           #output = es    (total=6, (total)6-3=3 & (total)6-1=5 e.i:3:5 will take alphabets from 3 to 5 but not 5)
+
+#Negative string slicing 3 --- [-4:-2]
+nm = "harry"
+print(nm[-4:-2])              #output = ar    (because it will form 1:3)
+
+
+#string operations 1
+a = "Harry"
+print(a.upper())    ---- will print all alpabets in upper case
+print(a.lower())    ---- will print all alpabets in lower case
+
+#string operations 2 ---- (rstrip)
+a = "Harry!!!!!!!"
+print(a.rstrip("!"))     #rstrip will remove all the "!" in "a".   #output = Harry
+                         #wont strip leading alphabets only will strip trailing 
+
+#string operations 3
+a = "!!!!Harry!!!!!!!"
+print(a.rstrip("!"))          #output = !!!!Harry
+                              #wont strip leading alphabets only will strip trailing
+
+#string operations 4  ---- replace -- replace words
+a = "Harry!!!!!!!!!!!"
+print(a.replace("Harry", "john"))  #output = john!!!!!!!!!!!
+
+a = "Harry!!!!!!!!Harry!!!"
+print(a.replace("Harry", "john"))  #output = john!!!!!!!!john!!!
+
+
+#string operations 6  ---- split -- split words
+a = "Harry!! !!!!!!!!! Harry"
+print(a.split(" "))                #output = ['Harry!!', '!!!!!!!!!', 'Harry']
+
+
+#string operations 7  ---- capitalize -- make the 1st alphabet caps and rest in lower case
+a = "he is a good boy"
+print(a.capitalize())              #output = He is a good boy
+
+
+#string operations 8  ---- center -- add spaces in front
+a = "he is a good boy"
+print(a.center(50))                #total character = 16 and we have added 50 center so it will add 50-16=34 space in front
+
+
+#string operations 9 --- count -- counts the no. of same words/alphabets in the line
+a = "Harry!! !!!!!!!!! Harry"
+print(a.count("Harry"))
+
+
+#string operations 10 --- endswith --- tell weather the sentence is ending with a given value
+a = "nothing is impossible!!!"
+print(a.endswith("!"))             #output = true
+
+#string operations 11 --- endswith/specific word --- tell weather the sentence has the given value in those position
+a = "nothing is impossible!!!"
+print(a.endswith("is", 4, 10))     #it is rying to find the word "is" from position 4:10 which is there  #output=true
+
+
+
+#string operations 12 --- find --- searches for 1st occurance of given value & show position value and return -1 if not present
+a = "nothing is impossible!!!"
+print(a.find("is"))                   #output = 8
+
+
+#string operations 13 --- index() --- same as find, searches for 1st occurance of given value but returns VALUEERROR:Substring not found if value not present
+a = "nothing is impossible!!!"
+print(a.index("is"))                  #output = 8
+
+
+
+#string operations 14 --- isalnum() --- tells that the given sentence has only a-z or 0-9 characters and if not then gives output as false
+a = "nothingisimpossible10"
+print(a.isalnum())                    #output = true
+
+
+#string operations 15 --- isalpha() --- tells that the given sentence has only a-z, and if number or others present then gives output as false
+a = "nothingisimpossible"
+print(a.isalpha())                    #output = true
+
+
+#string operations 16 --- islower() --- tells that the given sentence has only lower case a-z, and if not then gives output as false
+a = "nothingisimpossible"
+print(a.islower())                    #output = true
+
+
+#string operations 17 --- isupper() --- tells that the given sentence has only upper case A-Z, and if not then gives output as false
+a = "I AM THERE FOR YOU"
+print(a.isupper())                    #output = true
+
+
+#string operations 18 --- isprintable() --- shows output as true if all the values are printable or else false
+a = "i am there for you"
+print(a.isprintable())                #output = true
+
+
+#string operations 19 --- isspace() --- shows output as true if only white space (space button/tab buttons only no words/no.) or else false
+a = "    "
+print(a.isspace())                    #output = true
+
+
+#string operations 20 --- istitle() --- shows output as true if only each letter of word is capital or else false
+a = "Hi Im There For You"
+print(a.istitle())                    #output = true
+
+
+#string operations 21 --- startswith() --- shows output as true if word starts with "enteranytexthere" or else false
+a = "Hi Im There For You"
+print(a.startswith("Hi"))             #output = true
+
+
+#string operations 22 --- swapcase() --- converts upper to lower and lower to upper case
+a = "Hi Im There For You"
+print(a.swapcase())                   #output = hI iM tHERE fOR yOU
+
+
+#string operations 23 --- title() --- converts 1st alphabet of each word to capital alphabet
+a = "hi i am there for you"
+print(a.title())                      #output = Hi I Am There For You
+
+#if-else statement 1
+a = int(input("enter your age: "))
+print("your age is", a)
+
+if(a>18):
+  print("you can drive")
+else:
+  print("you cannot drive")
+
+
+#if-else statement 2
+a = int(input("enter your age: "))
+print("your age is", a)
+if(a>18):
+  print("you can drive")
+  print("yes")
+else:
+  print("you cannot drive")
+  print("no")
+
+
+#if-else statement 3
+appleprice = 210
+budget = 200
+if(appleprice <= budget):
+  print("alexa, add 1 kg apple to cart")
+else:
+  print("alexa, do not add apples to cart")
+
+
+#elif 1           ------ else if
+num = int(input("enter the value of num:"))
+if (num < 0):
+  print("number is negative")
+elif (num == 0):
+  print("number is zero")
+else:
+  print("number is positive")
+
+#elif 2
+num = int(input("enter the value of num:"))
+if (num < 0):
+  print("number is negative")
+elif (num == 0):
+  print("number is zero")
+elif (num == 999):
+  print("number is special")
+else:
+  print("number is positive")
+
+#nested 1  -----helps is giving as many as if statements you want inside another if statement
+num = 18
+if (num < 0): 
+  print("number is negative")
+elif (num > 0):
+  if (num <= 10):
+    print("number is between 1-10")
+  elif (num > 10 and num <=20):
+    print("number is between 11-20")
+  else:
+    print("number is greater than 20")
+else:
+  print("number is zero")
+
+#nested 2
+num = int(input("enter your num: "))
+if (num < 0): 
+  print("number is negative")
+elif (num > 0):
+  if (num <= 10):
+    print("number is between 1-10")
+  elif (num > 10 and num <=20):
+    print("number is between 11-20")
+  else:
+    print("number is greater than 20")
+else:
+  print("number is zero")
+
+
+
+#Know your time code   ---- python script to run and know your time line
+import time
+t1 = time.strftime('%H:%M:%S')
+print(t1)
+t1 = time.strftime('%H')
+print(t1)
+t1 = time.strftime('%M')
+print(t1)
+t1 = time.strftime('%S')
+print(t1)
+
+
+#Match case 1 ----- to implement switch-case like characterstics very similar to if-else functionlity, we use match case in python
+x = 4
+match x:
+  # if x is 0
+  case 0:
+    print("x is zero")
+  # case with if-condition
+  case 4:
+    print("case is 4")
+  case _:
+    print("number is above 5")
+
+
+#Match case 2
+x = int(input("enter your number here: "))
+match x:
+  # if x is 0
+  case 0:
+    print("x is zero")
+  # case with if-condition
+  case 4:
+    print("case is 4")
+  case _:
+    print("number is above 5")
+
+
+#Match case 3
+x = int(input("enter your number here: "))
+match x:
+  # if x is 0
+  case 0:
+    print("x is zero")
+  # case with if-condition
+  case 4:
+    print("case is 4")
+  case _ if x!=90:
+    print (x, "is not 90")
+  case _ if x!=80:
+    print (x, "is not 80")
+
+
+
+#For loops 1       --- can iterate over a sequence of (iterable) objects in python
+name = 'ujwesh'
+for i in name:
+  print(name)          #output= 6 times ujwesh
+
+
+#For loops 2  
+name = 'ujwesh'
+for i in name:
+  print(i)          #output= u      j       w     e    s    h  all alphabets one below another
+
+
+#For loops 3
+name = 'ujwesh'
+for i in name:
+  print(i)
+  if (i=="u"):
+    print("this is something special")      #output= when it will see that word has u (as i==u) it will print "this is somthing special"
+
+
+#For loops 4
+name = 'ujwesh'
+for i in name:
+  print(i, end=",")                         #output= u,j,w,e,s,h
+
+
+#For loops 5
+colors = ["red", "blue", "green", "yellow"]
+for x in colors:
+  print(x)                                 #output= red, blue, green, yellow one below the other
+
+
+#For loops 6
+colors = ["red", "blue", "green", "yellow"]
+for x in colors:
+  print(x)
+  for i in x:
+    print(i)                               #output = red r e d blue b l u e green g r e e n yellow y e l l o w   one below another
+
+
+
+#range 1   ---- print any amount of times (will print one number less n-1)
+for k in range(5):
+  print(k)                                #output= 1 2 3 4 one below another
+
+
+#range 2  ----- start(0) range
+for k in range(5):
+  print(k+1)                              #output= 1 2 3 4 5 one below another
+
+#range 3 ------ start(1) & stop(9) range
+for k in range(1, 9):
+  print(k)                                #output= 1 2 3 4 5 6 7 8 one below another
+
+#range 4
+for k in range(1, 10000):
+  print(k)                                #output= 1 2 3 ..... 9999 one below another
+
+
+#range 5 ------ start(1), stop(10) and step(4) ---- step give intervals like step=4 here so start with 1 and next no. will be in interval of 4 and again so one till stop(10)
+for k in range(1, 10, 4):
+  print(k)                                #output= 1 5 9 one below another
+
+
+#while loop 1   ---- will keep on printing value of 1 till condition i<3 (i is less than 3)
+i = 0
+while(i<3):
+  print(i)                                #output= 0 1 2
+  i=i+1                     
+
+
+#while loop 2
+i = 0
+while(i<3):
+  print(i)                                #output= 0 1 2 done with the loop
+  i=i+1
+print("done with the loop")
+
+
+#while loop 3  ----- (i<=3)
+i = 0
+while(i<=3):
+  print(i)                               #output= 0 1 2 3 done with the loop
+  i=i+1
+print("done with the loop")
+
+
+#while loop 4
+
+
+
+
